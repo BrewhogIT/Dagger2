@@ -6,6 +6,7 @@ import com.brewhog.android.dagger2.scopes.ActivityScope
 import com.brewhog.android.dagger2.scopes.FragmentScope
 import com.brewhog.android.dagger2.ui.MainActivity
 import com.brewhog.android.dagger2.ui.MyFragment
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector
@@ -20,4 +21,5 @@ interface MainActivityModule {
     @FragmentScope
     @ContributesAndroidInjector
     fun contributesFragment() : MyFragment
+
 }

@@ -16,7 +16,7 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(),HasSupportFragmentInjector {
     @Inject
-    lateinit var myRouter: MainRouter<MainActivity>
+    lateinit var myRouter: MainRouter
 
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>

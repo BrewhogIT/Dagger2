@@ -6,7 +6,7 @@ import com.brewhog.android.dagger2.ui.MainActivity
 import com.brewhog.android.dagger2.ui.MyFragment
 import javax.inject.Inject
 
-class MainRouter<T : AppCompatActivity>@Inject constructor (val activity : T) {
+class MainRouter @Inject constructor (val activity : MainActivity) {
 
     @Inject
     lateinit var myFragment: MyFragment

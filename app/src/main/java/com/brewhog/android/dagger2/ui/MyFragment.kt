@@ -14,7 +14,7 @@ import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment.*
 import javax.inject.Inject
 
-class MyFragment @Inject constructor() : Fragment(),View.OnClickListener {
+class MyFragment constructor() : Fragment(),View.OnClickListener {
     @Inject
     lateinit var sharedPreferences : SharedPreferences
 
